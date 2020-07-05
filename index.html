@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+ 
+<body>
+
+<div class="container"> 
+ <header>
+  <h1>Rock<br>Paper<br>Scissors</h1>
+  <div id="score"class="score">
+ 
+    <h1  >Score</h1>
+ <p >12</p>
+
+
+  </div>
+      </header>
+      
+
+<div class="choices" id="choices">
+<button id="paper" class="choice">
+  <span class="circle"><img src="images/icon-paper.svg"></span>
+
+  </button>
+ <button id="scissors" class="choice">  <span class="circle"><img  src="images/icon-scissors.svg"></span>
+   </button>
+  <button id="rock" class="choice"> <span class="circle"><img src="images/icon-rock.svg"></span>
+  </button>
+ </div>
+
+  
+ 
+   <div class="modal">
+    <div class="modal-content">
+      <div class="left" id="left"> </div>
+ </div>
+</div>
+  <div class="modal1" id="modal1">
+    <div id="result" class="modal-content ">
+   
+   
+ 
+  
+</div>
+
+  </div>
+    
+
+
+
+
+ <button id="btn-rules" class="btn-rules1">Rules</button>
+ <div id="modal3" class="rule">
+     <img  src="images/image-rules.svg"> 
+
+  
+  <button id="close" >  <img  src="images/icon-close.svg"></button>
+
+   
+</div>
+</div>
+   <script  src="js/main.js"></script>
+
+</body>
+</html>
